@@ -375,6 +375,7 @@ button,input,select,textarea,label{font-size:18px;line-height:27px}
 }
 .feature3{
 	max-width:900px;
+	width: auto;
 	margin: auto;
 }
 .feature-inner{
