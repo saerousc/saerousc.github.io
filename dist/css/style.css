@@ -265,7 +265,7 @@ button,input,select,textarea,label{font-size:18px;line-height:27px}
 	border-radius:2px;
 	cursor:pointer;justify-content:center;
 	padding:16px 32px;
-	height:48px;
+	height:auto;
 	text-align:center;
 	white-space:nowrap
 }
@@ -288,10 +288,10 @@ button,input,select,textarea,label{font-size:18px;line-height:27px}
 .button-sm.button-shadow::before{box-shadow:0 4px 16px rgba(32,43,54,0.12)}
 .button-sm.button-shadow:hover::before{box-shadow:0 4px 16px rgba(32,43,54,0.25)}
 .button-primary,.button-secondary{color:#fff !important;transition:background .15s ease}
-.button-primary{background:#00b9d2;background:linear-gradient(65deg, #00A2B8 -25%, #00CFEB 100%)}
-.button-primary:hover{background:#00bbd5;background:linear-gradient(65deg, #00a4bb -25%, #00d1ee 100%)}
-.button-secondary{background:#511f22;background:linear-gradient(65deg, #350408 -25%, #511f22 100%)}
-.button-secondary:hover{background:#000000;background:linear-gradient(65deg, #000000 -25%, #000000 100%)}
+.button-primary{background:#350408;transition: 0.3s;}
+.button-primary:hover{background:#a86f73;}
+.button-secondary{background:#8c1c21;transition: 0.3s;}
+.button-secondary:hover{background:#000000;}
 .button-block{display:flex}
 .site-header{position:relative;padding:24px 0}
 .site-header::before{
@@ -338,14 +338,14 @@ button,input,select,textarea,label{font-size:18px;line-height:27px}
 .hero{position:relative;overflow:hidden}
 .hero-paragraph{margin-bottom:32px}
 .hero-media{position:relative;height:200px;margin-top:40px;background:#fff;border-radius:4px 4px 0 0}
-.hero-media::before{vertical-align:bottom;content:'';position:absolute;top:0;right:0;bottom:0;left:0;box-shadow:0 16px 48px #E3E7EB;mix-blend-mode:multiply}
+.hero-media::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;box-shadow:0 16px 48px #E3E7EB;vertical-align:bottom;mix-blend-mode:multiply}
 @supports (-ms-ime-align: auto){
 	.hero-media::before{
 		box-shadow:0 16px 48px rgba(32,43,54,0.12)
 	}
 }
 @media (min-width: 641px){
-	.hero{padding-top:80px}
+	.hero{padding-top:0px}
 	.hero-paragraph{margin-bottom:40px;padding-left:72px;padding-right:72px}
 	.hero-media{margin-top:64px;height:400px}
 }
@@ -362,6 +362,12 @@ button,input,select,textarea,label{font-size:18px;line-height:27px}
 .features-wrap:first-child{margin-top:-12px}
 .features-wrap:last-child{margin-bottom:-12px}
 .feature{
+	padding:12px;
+	width:276px;
+	max-width:276px;
+	flex-grow:1
+}
+.feature2{
 	padding:12px;
 	width:276px;
 	max-width:276px;
@@ -499,3 +505,8 @@ main{flex:1 0 auto}
 .footer-brand,.footer-copyright{justify-content:flex-start}
 .footer-links,.footer-social-links{justify-content:flex-end}
 .footer-links{order:1;margin-bottom:0}}
+/*.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+}*/
