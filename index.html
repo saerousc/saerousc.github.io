@@ -66,14 +66,17 @@
             </section>
 
             <section class="features-extended section">
+
                 <div class="container">
                     <div class="pricing-inner section-inner has-top-divider">
                         <div class="pricing-tables-wrap">
                             <div class="pricing-table is-revealing">
                                 <div class="pricing-table-inner">
-                                <h3 class="mt-0">투표 사이트로 가기</h3>
+                                <h3 class="mt-0">투표하러 가기</h3>
                                 <p>투표 날짜: 3월 20-21일</br>
                                 투표 시간: 8:30-22:30</p>
+                                <h3 class="mt-0">
+          <div style="font-size: 25px; font-family: sans-serif; text-align: center;" id="countdown"></div></h3>
                                     <div class="pricing-table-cta">
                                         <a style="font-size: 16px" class="button button-secondary button-block" href="https://student.kaist.ac.kr/vote">
                                         student.kaist.ac.kr/vote</a>
@@ -82,51 +85,50 @@
                             </div>
                         </div>
                     </div>
-		
                         <div class="features-extended-header text-center">
                             <div class="container-sm">
                                 <h2 class="section-title mt-0">선본 기조문</h2>
                             </div>
                         </div>
                 </div>
-	    
 
                 <div class="feature-extended">
                     <div class="feature-extended-image is-revealing">
-                        <img src="gijo2.PNG" alt="gijo2" style="width:750px;">
+                        <img src="gijo2.PNG" alt="gijo2" style="width:900px;">
                     </div>
                     <div class="feature-extended-body">
-                        <p style="color: #ffffff">Where text is visible, people tend to focus on the textual content rather than upon overall presentation</p>
+                        <p style="color: #ffffff">Where text is visible, people tend to focus on the</p>
                     </div>
                 </div>
 
                 <div class="feature-extended">
                     <div class="feature-extended-image is-revealing">
-                        <img src="gijo4.PNG" alt="gijo4" style="width:750px;">
+                        <img src="gijo4.PNG" alt="gijo4" style="width:900px;">
                     </div>
                 </div>
 
                 <div class="feature-extended">
                     <div class="feature-extended-image is-revealing">
-                        <img src="gijo3.PNG" alt="gijo3" style="width:750px;">
+                        <img src="gijo3.PNG" alt="gijo3" style="width:900px;">
                     </div>
                     <div class="feature-extended-body">
-                        <p style="color: #ffffff">Where text is visible, people tend to focus on the textual content rather than upon overall presentation</p>
+                        <p style="color: #ffffff">Where text is visible, people tend to focus on the</p>
                     </div>
                 </div>
 
                 <div class="feature-extended">
                     <div class="feature-extended-image is-revealing">
-                        <img src="gijo1.PNG" alt="gijo1" style="width:750px;">
+                        <img src="gijo1.PNG" alt="gijo1" style="width:900px;">
                     </div>
                 </div>
-	    
+
             </section>
+
             <section class="features section text-center">
                 <div class="container">
                     <div class="features-inner section-inner has-top-divider">
                         <h2 class="section-title mt-0">공약 한눈에 보기</h2>
-                        <div class="features-wrap">
+                        <div class="feature3 features-wrap">
                             <div class="feature is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
@@ -136,7 +138,7 @@
                                     <p class="text-sm">의결 과정과 결과를 정리한 회의록을 소통매체에 공지하여, 누구나 손쉽게 목소리를 낼 수 있는 환경을 만드는 가까운 총학생회를 만들 것입니다.</p>
                                 </div>
                             </div>
-                            <div class="feature is-revealing">
+                            <div class="feature is-revealing ">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
 	                                	<img src="icon2.png" alt="icon2" style="width:70px;height:70px;">
@@ -185,7 +187,7 @@
                             <div class="pricing-table is-revealing">
                                 <div class="pricing-table-inner">
                                     <div class="pricing-table-cta">
-                                        <a class="button button-secondary button-block" href="https://github.com/saerousc/saerousc.github.io/raw/master/정책공약집.pdf">정책자료집 다운로드</a>
+                                        <a class="button button-secondary button-block" href="https://github.com/saerousc/saerousc.github.io/raw/master/정책공약집.pdf">정책공약집 다운로드</a>
                                     </div>
                                 </div>
                             </div>
@@ -218,5 +220,14 @@
         </footer>
     </div>
     <script src="dist/js/main.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript">
+    $('#countdown').countdown('2019/03/20 08:30', function(event) {
+      $(this).html(event.strftime('%d일 %H시간 %M분 %S초'));
+    });
+  </script>
 </body>
 </html>
